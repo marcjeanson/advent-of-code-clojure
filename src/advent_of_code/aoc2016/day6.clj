@@ -1,10 +1,8 @@
 (ns advent-of-code.aoc2016.day6
   (:require
-   [clojure.java.io :as io]
-   [clojure.string :as str]))
+   [clojure.java.io :as io]))
 
 (def input (line-seq (io/reader (io/resource "aoc2016/day06.txt"))))
-
 
 (defn part-1 [input]
   (->> input
@@ -49,9 +47,9 @@
   (part-1 input)
   ;; => "gebzfnbt"
 
-
   (part-2 sample)
+  ;; => "advent"
   (part-2 input)
-
+  ;; => "fykjtwyn"
 
   )
