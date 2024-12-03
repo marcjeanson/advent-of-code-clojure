@@ -6,10 +6,7 @@
 
 (defn part1 [input]
   (->> (re-seq #"(mul\((\d+),(\d+)\))" input)
-       (map #(drop 2 %))
-       (map (fn [[x y]]
-              (* (parse-long x) (parse-long y))
-              ))
+       (map #(->> % (drop 2) (map parse-long) (apply *)))
        (reduce +)))
 
 (defn part2 [input]
