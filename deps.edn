@@ -1,5 +1,8 @@
 {:paths ["src" "resources"]
- :deps {org.clojure/clojure {:mvn/version "1.11.1"} thedavidmeister/cljc-md5 {:mvn/version "0.0.2"} org.clojure/math.numeric-tower {:mvn/version "0.0.5"}}
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        thedavidmeister/cljc-md5 {:mvn/version "0.0.2"}
+        org.clojure/math.numeric-tower {:mvn/version "0.0.5"}
+        org.clojure/math.combinatorics {:mvn/version "0.3.0"}}
  :aliases
  {:run-m {:main-opts ["-m" "advent-of-code.advent-of-code"]}
   :run-x {:ns-default advent-of-code.advent-of-code
