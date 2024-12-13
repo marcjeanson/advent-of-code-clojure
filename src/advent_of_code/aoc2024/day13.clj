@@ -1,7 +1,5 @@
 (ns advent-of-code.aoc2024.day13
-  (:require [clojure.java.io :as io]
-            [clojure.string :as str]
-            [clojure.set :as set]))
+  (:require [clojure.java.io :as io]))
 
 (def input (line-seq (io/reader (io/resource "aoc2024/day13.txt"))))
 
